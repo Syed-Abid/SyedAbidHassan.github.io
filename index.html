@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed Abid Hassan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5fa778f1ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container"> 
+        <nav>
+          <img src="../Images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Data Analyst</p>
+          <h1>
+            Hi, I'm <span>Syed Abid<br />Hassan</span> from Pakistan
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------about--------------- --->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="../Images/During Competition Picture.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi! I'm a skilled Data Analyst with a computer science background
+              and impactful internships. Certified in SQL and Python basics, I
+              excel in dissecting data for insights. Beyond internships, I've
+              clinched victories in data analytics competitions and completed
+              diverse projects, showcasing my ability to turn data into
+              actionable insights. Commended by a Founder, I'm committed to
+              continuous improvement, eagerly exploring the dynamic data domain.
+              Excited for the journey ahead! 🚀
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span><b>Explorartory Data Analysis</b></span
+                  ><br />Extracting sagacious insights from raw data
+                </li>
+                <li>
+                  <span><b>Data Visualization</b></span
+                  ><br />Presenting those insights in a sophisticated and
+                  appealing manner
+                </li>
+                <li>
+                  <span><b>Data Modelling</b></span
+                  ><br />Modelling the data
+                </li>
+                <li>
+                  <span><b>Data Warehousing</b></span
+                  ><br />Building warehouses for data storage
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span
+                    ><b>Data Science Intern</b> &nbsp; &nbsp; &nbsp;
+                    <b>2023 (December)</b></span
+                  ><br />Prodigy Infotech
+                </li>
+                <li>
+                  <span
+                    ><b>Data Analyst Intern</b> &nbsp; &nbsp; &nbsp;
+                    <b>2023 (August - November)</b></span
+                  ><br />KultureHire
+                </li>
+                <li>
+                  <span
+                    ><b>Data Science and Business Analytics Intern</b> &nbsp;
+                    &nbsp; &nbsp; <b>2023 (June - July)</b></span
+                  ><br />The Sparks Foundation
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span><b>2020-24</b></span
+                  ><br />University of Karachi
+                </li>
+                <li>
+                  <span><b>2018-20</b></span
+                  ><br />Nasra College
+                </li>
+                <li>
+                  <span><b>2018</b></span
+                  ><br />Nasra School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- skills and tools -->
+    <div class="container">
+      <h2 class="sub-title">Toolkit</h2>
+      <section class="ImagesContainer">
+        <div class="slide">
+          <img
+            src="../Images/sql server.png" alt="SQL Server"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="../Images/mysql.png"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="../Images/postgre sql (1).png"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="../Images/python.png"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="../Images/tableau.png"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="../Images/power bi.png"
+          />
+        </div>
+      </section>
+    </div>
+    <!---------------------services------------------>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h2><b>E-Data Analysis</b></h2>
+            <p>Description of the Service you that you have mentioned.</p>
+            <a href="#"><b>Learn More</b></a>
+            <!--Insert the link of your fiverr gig here-->
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h2><b>Data Visualization</b></h2>
+            <p>Can make appealing and insightful dashboards of your data.</p>
+            <a href="#"><b>Learn More</b></a>
+            <!--Insert the link of your fiverr gig here-->
+          </div>
+          <div>
+            <i class="fa-solid fa-table-cells"></i>
+            <h2><b>Data Modelling</b></h2>
+            <p>Description of the Service you that you have mentioned.</p>
+            <a href="#"><b>Learn More</b></a>
+            <!--Insert the link of your fiverr gig here-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------portfolio------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="../Images/product picture.png" />
+            <div class="layer">
+              <h3><b>Product Performance Insights</b></h3>
+              <p>
+                Analyzing sales of a German beverage company named "CodeX" to
+                find flaws and recommending solutions for it.
+              </p>
+              <a
+                href="https://github.com/Syed-Abid/CodeBasics-Data-Analysis-Challenges"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="../Images/spotify picture.png" />
+            <div class="layer">
+              <h3><b>Comprehensive Analysis of Spotify</b></h3>
+              <p>
+                Analyzing the spotify dataset to extract some sagacious
+                insights.
+              </p>
+              <a href="https://github.com/Syed-Abid/PRODIGY_DS_02"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="../Images/bridging picture.png" />
+            <div class="layer">
+              <h3><b>Bridging Borders SQL Case Study</b></h3>
+              <p>
+                Diving into cultural affinities of both countries using SQL to
+                extract some thoughful information.
+              </p>
+              <a href="https://github.com/Syed-Abid/Shopping-Trend-Analysis"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Syed-Abid?tab=repositories" class="btn"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <!-- Awards -->
+   <div class="container">
+    <h1 class="sub-title">Honors & awards</h1>
+    <div class="image-container">
+        <img src="../Images/award1.jpeg" alt="Image 1" />
+        <img src="../Images/award4.jpeg" alt="Image 2" />
+        <img src="../Images/award3.jpeg" alt="Image 3" />
+        <img src="../Images/award2.jpeg" alt="Image 4" />
+      </div>
+      <div class="image-container2">
+        <img src="../Images/award5.jpeg" alt="Image 5" />
+      </div>
+   </div>
+    <!-----------------contact------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i>
+              abidhassanjaffri31@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 03108421235</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/syed-abid-hassan-bb569b1b8/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/SyedAbi70523793"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://github.com/Syed-Abid"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.hackerrank.com/profile/sjaffri352"
+                ><i class="fa-brands fa-hackerrank"></i
+              ></a>
+              <a href="https://www.instagram.com/syedabid3527/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100012918968183&mibextid=ZbWKwL"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Syed Abid Hassan</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwkvOQ86JMX4BedHb78HBreXIki6Jn9gBXPNFV7mZ3xHh280JCj-NvMNaBANu0ZQno/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
