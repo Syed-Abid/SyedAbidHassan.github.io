@@ -43,7 +43,7 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
+            <p >
               Hi! I'm a skilled Data Analyst with a computer science background
               and impactful internships. Certified in SQL and Python basics, I
               excel in dissecting data for insights. Beyond internships, I've
@@ -205,7 +205,7 @@
                 find flaws and recommending solutions for it.
               </p>
               <a
-                href="https://github.com/Syed-Abid/CodeBasics-Data-Analysis-Challenges"
+                href="https://github.com/Syed-Abid/CodeBasics-Data-Analysis-Challenges" target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -218,7 +218,7 @@
                 Analyzing the spotify dataset to extract some sagacious
                 insights.
               </p>
-              <a href="https://github.com/Syed-Abid/PRODIGY_DS_02"
+              <a href="https://github.com/Syed-Abid/PRODIGY_DS_02" target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -231,17 +231,84 @@
                 Diving into cultural affinities of both countries using SQL to
                 extract some thoughful information.
               </p>
-              <a href="https://github.com/Syed-Abid/Bridging-Borders-Between-Pakistan-and-India-Project-"
+              <a href="https://github.com/Syed-Abid/Bridging-Borders-Between-Pakistan-and-India-Project-" target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
         </div>
-        <a href="https://github.com/Syed-Abid?tab=repositories" class="btn"
+        <!-- <a href="https://github.com/Syed-Abid?tab=repositories" target="_blank" class="btn"
           >See More</a
-        >
+        > -->
+
+        <a href="javascript:void(0);" class="btn" onclick="showMoreProjects()">See More</a>
+
+
       </div>
+
+      
     </div>
+
+ <!-- Add the projects to reveal once see more button is clicked -->
+    <div id="hiddenProjects"  style="display: none; opacity: 0; transition: opacity 0.5s ease;">
+    <div id="portfolio">
+      <div class="container">
+     
+        <div class="work-list">
+          <div class="work">
+            <img src="images/product picture.png" />
+            <div class="layer">
+              <h3><b>Product Performance Insights</b></h3>
+              <p>
+                Analyzing sales of a German beverage company named "CodeX" to
+                find flaws and recommending solutions for it.
+              </p>
+              <a
+                href="https://github.com/Syed-Abid/CodeBasics-Data-Analysis-Challenges" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/spotify picture.png" />
+            <div class="layer">
+              <h3><b>Comprehensive Analysis of Spotify</b></h3>
+              <p>
+                Analyzing the spotify dataset to extract some sagacious
+                insights.
+              </p>
+              <a href="https://github.com/Syed-Abid/PRODIGY_DS_02" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/bridging picture.png" />
+            <div class="layer">
+              <h3><b>Bridging Borders SQL Case Study</b></h3>
+              <p>
+                Diving into cultural affinities of both countries using SQL to
+                extract some thoughful information.
+              </p>
+              <a href="https://github.com/Syed-Abid/Bridging-Borders-Between-Pakistan-and-India-Project-" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+   
+
+
+      </div>
+
+      
+    </div>
+  </div>
+
+ 
+      </div>  
+
+
 
     <!-- Awards -->
    <div class="container">
@@ -268,23 +335,23 @@
             </p>
             <p><i class="fa-solid fa-phone"></i> 03108421235</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/syed-abid-hassan-bb569b1b8/"
+              <a href="https://www.linkedin.com/in/syed-abid-hassan-bb569b1b8/" target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
-              <a href="https://twitter.com/SyedAbi70523793"
+              <a href="https://twitter.com/SyedAbi70523793" target="_blank"
                 ><i class="fa-brands fa-x-twitter"></i
+              ></a> 
+              <a href="https://github.com/Syed-Abid" target="_blank"
+                ><i class="fa-brands fa-github"></i 
               ></a>
-              <a href="https://github.com/Syed-Abid"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://www.hackerrank.com/profile/sjaffri352"
+              <a href="https://www.hackerrank.com/profile/sjaffri352" target="_blank"
                 ><i class="fa-brands fa-hackerrank"></i
               ></a>
-              <a href="https://www.instagram.com/syedabid3527/"
+              <a href="https://www.instagram.com/syedabid3527/" target="_blank"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
               <a
-                href="https://www.facebook.com/profile.php?id=100012918968183&mibextid=ZbWKwL"
+                href="https://www.facebook.com/profile.php?id=100012918968183&mibextid=ZbWKwL" target="_blank"
                 ><i class="fa-brands fa-facebook"></i
               ></a>
             </div>
@@ -317,7 +384,18 @@
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
+      function showMoreProjects() {
+    // Get the hidden projects container
+    var hiddenProjectsContainer = document.getElementById('hiddenProjects');
 
+    // Set the display property to block or flex
+    hiddenProjectsContainer.style.opacity = '1';
+    hiddenProjectsContainer.style.display = 'block'; // or 'flex'
+
+    // Optionally, you can remove the "See More" button after clicking
+    var seeMoreButton = document.querySelector('.btn');
+    seeMoreButton.style.display = 'none';
+  }
       function opentab(tabname) {
         for (tablink of tablinks) {
           tablink.classList.remove("active-link");
